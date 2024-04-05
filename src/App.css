@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body{
+  background-image: url(./200w.gif);
+  height: 92vh;;
+  border:2vw solid black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main{
+  height:95%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.heading{
+  font-size: 10vh;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text,.heading{
+  color:aliceblue;
+}
+.text:hover{
+  font-size: 3vh;
+  color: aqua;
+}
+.die-comp{
+  display: grid;
+  grid-template:auto auto/repeat(5,1fr) ;
+}
+.winner-logo{
+  height: 50vh;
+}
+.roll{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh 4vw;
+  border-radius: 2vh;
+  background-color: aqua;
+  color: red;
+  font-weight: 800;
+  font-size: large;
+}
+.roll:hover{
+  background-color: aliceblue;
+  color:black;
+  box-shadow: 0 0 2vh aqua, 0 0 2vh aqua, 0 0 2vh aqua, 0 0 2vh aqua, 0 0 2vh aqua;
+}
+.win-comp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 4vh;
+  color:white;
+}
+.footer{
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  padding:2vh;
 }
